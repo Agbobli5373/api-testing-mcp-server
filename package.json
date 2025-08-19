@@ -1,0 +1,46 @@
+{
+  "name": "api-mcp-server",
+  "version": "1.0.0",
+  "description": "Standalone MCP server focused on API testing (HTTP client, JSON schema, multipart, concurrency, retries).",
+  "type": "module",
+  "main": "dist/index.js",
+  "bin": {
+    "api-mcp-server": "./wrapper.cjs"
+  },
+  "scripts": {
+    "build": "tsc",
+    "start": "node dist/index.js",
+    "dev": "tsx src/index.ts",
+    "clean": "rimraf dist",
+    "typecheck": "tsc --noEmit"
+  },
+  "keywords": [
+    "mcp",
+    "api",
+    "http",
+    "testing",
+    "json-schema",
+    "multipart",
+    "concurrency",
+    "typescript"
+  ],
+  "author": {
+    "name": "Isaac Agbobli"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^0.4.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.3.0",
+    "rimraf": "^5.0.0",
+    "tsx": "^4.0.0",
+    "typescript": "^5.0.0"
+  },
+  "optionalDependencies": {
+    "form-data": "^4.0.0"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  }
+}

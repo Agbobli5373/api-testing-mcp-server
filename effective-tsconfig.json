@@ -1,0 +1,49 @@
+{
+    "compilerOptions": {
+        "target": "es2022",
+        "module": "es2022",
+        "lib": [
+            "es2020"
+        ],
+        "outDir": "./dist",
+        "rootDir": "./src",
+        "strict": true,
+        "esModuleInterop": true,
+        "allowSyntheticDefaultImports": true,
+        "skipLibCheck": true,
+        "forceConsistentCasingInFileNames": true,
+        "declaration": true,
+        "declarationMap": true,
+        "sourceMap": true,
+        "resolveJsonModule": true,
+        "moduleResolution": "node10",
+        "useDefineForClassFields": true,
+        "noImplicitAny": true,
+        "noImplicitThis": true,
+        "strictNullChecks": true,
+        "strictFunctionTypes": true,
+        "strictBindCallApply": true,
+        "strictPropertyInitialization": true,
+        "strictBuiltinIteratorReturn": true,
+        "alwaysStrict": true,
+        "useUnknownInCatchVariables": true
+    },
+    "files": [
+        "./src/index.ts",
+        "./src/api-client/index.ts",
+        "./src/server/execute-tool-method.ts",
+        "./src/server/get-allowed-tools.ts",
+        "./src/server/optimized-server.ts",
+        "./src/tools/index.ts"
+    ],
+    "include": [
+        "src/**/*",
+        "api-mcp-server/src/tools/api-tools",
+        "api-mcp-server/src/tools/index.ts"
+    ],
+    "exclude": [
+        "node_modules",
+        "dist",
+        "**/*.test.ts"
+    ]
+}
