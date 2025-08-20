@@ -120,14 +120,7 @@ geckodriver.log
 chromedriver.log
 edgedriver.log
 
-# Test files
-test/
-tests/
-__tests__/
-*.test.ts
-*.test.js
-*.spec.ts
-*.spec.js
+
 
 # Documentation build
 docs/build/
