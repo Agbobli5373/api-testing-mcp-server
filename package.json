@@ -38,7 +38,8 @@
     "rimraf": "^5.0.0",
     "tsx": "^4.0.0",
     "typescript": "^5.0.0",
-    "vitest": "^1.6.1"
+    "vitest": "^1.6.1",
+    "ajv": "^8.12.0"
   },
   "optionalDependencies": {
     "form-data": "^4.0.0"
